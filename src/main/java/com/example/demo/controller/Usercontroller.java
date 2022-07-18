@@ -15,6 +15,7 @@ public class Usercontroller {
     @GetMapping("/{id}")
     public User getUserById(@PathVariable Integer id) {
         User user = userMapper.selectById(id);
+        int i = 1;
         return user;
     }
 
